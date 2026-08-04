@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2/promise');
-const cors = require('cors');
-require('dotenv').config();
+const corsOptions = {
+origin: ['http://localhost:5173', 'http://localhost:3000', 'https://precious-illumination-production-eb7a.up.railway.app'],require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5001;
