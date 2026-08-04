@@ -29,7 +29,7 @@ import {
   Menu
 } from "lucide-react";
 
-const API_BASE = "http://localhost:5001";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5001";
 
 // Preset product categories and subcategories strictly for PHYSICAL GEAR
 const PRODUCT_CATEGORY_MAP = {
